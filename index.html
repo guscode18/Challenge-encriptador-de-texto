@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="shortcut icon" href="/image/candado.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="encriptar">
+            
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingresa el texto aqui"></textarea>
+            <div class="terminos">
+                <p>Solo letras minusculas, sin acentos ni caracteres especiales</p>
+            </div>
+            <div class="botones">
+                <button onclick="encriptarTexto();" class="boton__encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="boton__desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="resultado">
+            <img src="/image/tipos-encriptacion-de-datos.png" alt="Imagen de represantacion de pagina" id="imagen">
+            <div class="resultado__encriptado">
+                <h2 id="titulo__mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <button onclick="copiarTexto();" class="boton__copiar" id="copiar" disabled, hidden>Copiar</button>
+                <!-- <textarea name="salida" id="salida" cols="30" rows="10" class="salida"></textarea> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+<script src="app.js"> </script>
+
+</html>
